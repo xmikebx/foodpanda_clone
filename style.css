@@ -1,0 +1,151 @@
+/* importing a font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+/* apply the imported font to every single HTML element with the * selector */
+* {
+    font-family: 'Montserrat', sans-serif;}
+
+/* change the websites background color and remove the default margin applied in browser */
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+/* NAVBAR CSS */
+/* use flexbox to position the child elements in the nav tag */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    /* padding: 16px 48px; */
+}
+
+#navbarLogo {
+    /* background-color: chocolate; */
+    /* margin-left: 12px; */
+    margin-top: 1px;
+    padding: 0px 48px;
+    width: 164px;
+}
+
+/* generic link style added to all a tags in the nav bar */
+
+#navbarlinks {
+    margin-left: 100.4px;
+}
+
+
+#navbarlinks a {
+
+    /* background-color: aqua; */
+    color: #1D1D1D;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px 9.4px;
+    padding: 20px 0px;
+    border-top: 5px solid transparent;
+}
+
+#navbarlinks a:hover {
+    border-top: 2px solid #ff2b85;
+}
+
+
+
+
+
+
+
+
+
+
+/* #navbarLinks {
+    display: flex;
+    background-color: chartreuse;
+    height: 64px;
+    justify-self: flex-end;} */
+
+
+/* #navbarLinks a {
+
+    background-color: aqua;
+    color: #231f20;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    height: 64px;
+} */
+
+/* #navbarLinks a:hover {
+    border-top: 2px solid #ff2b85;
+} */
+
+#loc {
+    color: white;
+    font-size: 14px;
+    background-color: #ff2b85;
+    height: 42px;
+    /* line-height: 1rem; */
+    border-radius: 50px;
+    margin-left: -30px;
+
+    padding: 12.2px;
+
+}
+
+#navbarloc a {
+    text-decoration: none;
+
+}
+
+#loc a {
+/* color: white;
+font-size: 14px; */
+
+}
+
+#navbarsearch {
+    background-color: aqua;
+}
+
+#search {
+    /* margin-left: 14px; */
+    width: 20px;
+    /* padding-right: 50px; */
+}
+
+
+/* Hamburger menu in the navbar is hidden until the screen is too small */
+#hamburger {
+    display: none;
+}
+
+#hamburger div {
+    height: 1px;
+    width: 25px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Media query to trigger the hamburger appearing and hiding the a tags */
+@media (max-width: 1230px) {
+
+    nav {
+        padding: 8px 40px;
+    }
+
+    #navbarLogo {
+        width: 80px;
+    }
+
+    /* display none hide the element and all child elements, display block is the default value for elements */
+    #navbarLinks {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
