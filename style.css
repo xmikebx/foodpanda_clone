@@ -6,9 +6,16 @@
     font-family: 'Montserrat', sans-serif;}
 
 /* change the websites background color and remove the default margin applied in browser */
+
+p {
+    margin: 0px;
+}
+
 body {
-    background-color: lightgray;
+    background-color: white;
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* NAVBAR CSS */
@@ -16,108 +23,216 @@ body {
 nav {
     background-color: white;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 64px;
-    /* padding: 16px 48px; */
+    /* width: 100vw; */
+    height: 66px;
 }
 
 #navbarLogo {
-    /* background-color: chocolate; */
-    /* margin-left: 12px; */
+    display: flex;
+    /* background-color: coral; */
+    margin-left: 26px;
     margin-top: 1px;
-    padding: 0px 48px;
     width: 164px;
 }
 
-/* generic link style added to all a tags in the nav bar */
-
 #navbarlinks {
-    margin-left: 100.4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(173, 203, 139); */
+    margin-left: 70px;
 }
 
 
-#navbarlinks a {
+/* #navbarlinks a {
 
-    /* background-color: aqua; */
     color: #1D1D1D;
     font-size: 14px;
     text-decoration: none;
-    margin: 0px 9.4px;
+    margin: 0px 12px;
     padding: 20px 0px;
     border-top: 5px solid transparent;
 }
 
 #navbarlinks a:hover {
     border-top: 2px solid #ff2b85;
+} */
+
+.nav_list {
+    /* background-color: cadetblue; */
+    display: flex;
+    list-style: none;
+    height: auto;
 }
 
+/* .nav_list li {
+    margin: 10px;
+} */
 
 
-
-
-
-
-
-
-
-/* #navbarLinks {
-    display: flex;
-    background-color: chartreuse;
-    height: 64px;
-    justify-self: flex-end;} */
-
-
-/* #navbarLinks a {
-
-    background-color: aqua;
-    color: #231f20;
+.fixed a {
+    color:black;
     font-size: 14px;
     text-decoration: none;
-    margin: 0 10px;
-    height: 64px;
-} */
-
-/* #navbarLinks a:hover {
+    margin: 0px 12px;
+    padding: 22.5px 0px;
     border-top: 2px solid #ff2b85;
-} */
+}
+
+.tabbed a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px 12px;
+    padding: 22.5px 0px;
+    border-top: 5px solid transparent;
+}
+
+.tabbed a:hover {
+    border-top: 2px solid #ff2b85;
+
+}
+
 
 #loc {
-    color: white;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ff2b85;
-    height: 42px;
-    /* line-height: 1rem; */
+    height: 43px;
     border-radius: 50px;
-    margin-left: -30px;
-
-    padding: 12.2px;
-
-}
-
-#navbarloc a {
-    text-decoration: none;
+    margin-left: 22px;
+    padding: 0px 15px;
 
 }
+
 
 #loc a {
-/* color: white;
-font-size: 14px; */
-
-}
-
-#navbarsearch {
-    background-color: aqua;
+    color: white;
+    font-size: 14px;
+    /* background-color: #ff2b85; */
+    text-decoration: none;
 }
 
 #search {
-    /* margin-left: 14px; */
     width: 20px;
-    /* padding-right: 50px; */
+    height: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+
 }
 
+#video-container {
+    /* display: flex; */
+    height: 440px;
+    width: auto;    
+    background-color: crimson;
+    /* overflow: hidden; */
+}
 
-/* Hamburger menu in the navbar is hidden until the screen is too small */
+.bold_p {    font-family: SemiBold,sans-serif;
+    color: #343b46;
+    font-size: clamp(1.75rem,3vw,2.25rem);
+    line-height: 1.25;
+    letter-spacing: -.025em;
+    margin-top: 20px;;
+}
+
+.bold_t {
+    display: flex;
+    justify-self: center;
+    align-self: flex-start;
+    /* font-weight: 400; */
+    color: #343b46;
+    font-size: 32px;
+    margin-top: 5px;
+    max-width: 60%;
+}
+
+.light_t {
+    display: flex;
+    justify-self: center;
+    align-self: flex-start;
+    color: #343b46;
+    font-family: Regular,sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 85%;
+}
+
+#container_row1 {
+
+display: flex;
+height: 360px;
+width: auto;
+padding: 80px;
+background-color: white;
+}
+
+#container_row1_inner {
+    /* background-color: chocolate; */
+    width: 700px;
+    height: 232px;
+    padding: 78px 0px;
+}
+
+/* Not happy with formatting on this row. 
+Working on a template that's consistent to use throughout the page */
+
+#container_row2 {
+    /* background-color: cornflowerblue; */
+    display: flex;
+    height: 330px;
+    width: auto;
+    margin-top: 0px;
+    padding: 0px 50px;
+    /* background-color: white; */
+    }
+
+#container_row2_inner_left {
+    /* background-color: darkorchid; */
+    display: flex;
+    width: 55%;
+    height: 290px;
+    /* padding-left: 20px; */
+    margin: 0;
+    padding: 20px 20px 20px 0px;
+
+}
+
+#container_row2_image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#container_row2_inner_right {
+    /* background-color: dodgerblue; */
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 330px;
+    margin-left: 60px;
+    padding-right: 30px;
+}
+
+#container_row_test_container {
+    background-color: coral;
+    display: flex;
+    height: 330px;
+    width: auto;
+    padding: 64px 80px;
+}
+
+Hamburger menu in the navbar is hidden until the screen is too small */
 #hamburger {
     display: none;
 }
@@ -130,22 +245,22 @@ font-size: 14px; */
 }
 
 /* Media query to trigger the hamburger appearing and hiding the a tags */
-@media (max-width: 1230px) {
+/* @media (min-width: 200px) {
 
     nav {
         padding: 8px 40px;
     }
 
-    #navbarLogo {
+#navbarLogo {
         width: 80px;
-    }
+    } */
 
     /* display none hide the element and all child elements, display block is the default value for elements */
-    #navbarLinks {
+/* #navbarLinks {
         display: none;
     }
 
     #hamburger {
         display: block;
     }
-}
+} */
